@@ -5,4 +5,4 @@
 - [x] Add save/load, JSON export, and annotated-image export with a clearly marked synthetic board demo.
 - [x] Keep recognition out of scope and state that no automatic identification is guaranteed.
 - [x] Add Linux/Windows launchers, configurable localhost hosting, documentation, and automated tests.
-- [ ] Validate the app, create a private GitHub repository, and push the completed project.
+- [x] Validate the app, create a private GitHub repository, and push the completed project.
