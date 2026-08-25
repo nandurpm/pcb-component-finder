@@ -36,3 +36,9 @@ Tests cover annotation serialization, normalized coordinate scaling, malformed-p
 ## License
 
 MIT.
+
+## Live Render Demo
+
+A responsive, synthetic/demo report is available at [https://pcb-component-finder.onrender.com](https://pcb-component-finder.onrender.com). The hosted view is read-only and preserves the repository's documented local-first boundaries.
+
+<!-- render-live-url:https://pcb-component-finder.onrender.com -->
