@@ -1,3 +1,10 @@
+/*
+ * ============================================================
+ * FILE: model.mjs
+ * PURPOSE: Defines PCB Component Finder's domain model, validation rules, calculations, and aggregation helpers.
+ * ============================================================
+ */
+
 import { randomUUID } from "node:crypto";
 export const SCHEMA_VERSION=1;
 export const TYPES=["resistor","capacitor","diode","LED","transistor","regulator","op-amp","logic IC","connector","sensor","other"];

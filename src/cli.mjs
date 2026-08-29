@@ -1,4 +1,11 @@
 #!/usr/bin/env node
+/*
+ * ============================================================
+ * FILE: cli.mjs
+ * PURPOSE: Implements PCB Component Finder's command-line interface and coordinates validation, persistence, report generation, and local serving.
+ * ============================================================
+ */
+
 import { createReadStream,existsSync } from "node:fs";import { stat } from "node:fs/promises";import { createServer } from "node:http";import { basename,resolve } from "node:path";import { demoProject } from "./demo.mjs";import { writeReport } from "./report.mjs";
 const usage=`PCB Component Finder — local manual PCB annotation\n\nUsage:\n  pcb-component-finder demo [--out reports/demo]\n  pcb-component-finder serve <report-directory> [--port 4063]`;
 function parse(args){const values=new Map(),positional=[];for(let i=0;i<args.length;i+=1){const token=args[i];if(!token.startsWith('--')){positional.push(token);continue}const[key,inline]=token.split('=',2);values.set(key,inline??args[++i])}return{values,positional}}const get=(input,key,fallback)=>input.values.get(key)??fallback;const print=value=>process.stdout.write(`${JSON.stringify(value,null,2)}\n`);
